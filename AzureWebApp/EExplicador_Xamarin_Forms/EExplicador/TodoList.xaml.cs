@@ -13,6 +13,7 @@ namespace EExplicador
             InitializeComponent();
 
             manager = TodoItemManager.DefaultManager;
+            manager.IsOfflineEnabled = true;
 
             // OnPlatform<T> doesn't currently support the "Windows" target platform, so we have this check here.
             if (manager.IsOfflineEnabled &&
